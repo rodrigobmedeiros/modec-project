@@ -3,7 +3,7 @@
 This project creates a backend to manage different equipment of an FPSO (Floating Production, Storage and Offloading). This system will be used for other applications in the organization and is extremely important creating this in a reusable way.
 
 ## Getting Started
-___
+
 
 ### Pre-requisites and Local Development
 
@@ -75,9 +75,8 @@ With "OK" meaning that all tests were passed with success.
 
 
 ## API Rerefence
-___
 
-curl was used to call API endpoints. To install and configure curl depending on your operational system, visit this [website](https://curl.se/).
+`curl` was used to call API endpoints. To install and configure `curl` depending on your operational system, visit this [website](https://curl.se/).
 
 ### Getting Started
 
