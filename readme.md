@@ -10,7 +10,7 @@ ___
 ### Database - PostgreSQL
 
 PostgreSQL is a relational object database management system, developed as an open source project. Due to the relational nature of the problem, considering the relationship between vessels and equipments, this manager was chosen among other things for being robust, supporting working with a large volume of data in addition to having an extremely strong development community, which makes it my own point of view one of the best if not the best option to model the application database.
-To install PostgreSQL visit this [website](https://www.postgresql.org/) and select the best option depending on your operating system. In this project was used the `version 13.0` 
+To install PostgreSQL visit this [website](https://www.postgresql.org/) and select the best option depending on your operating system. This project used `version 13.0` 
 
 ### Database configuration
 
