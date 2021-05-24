@@ -128,7 +128,7 @@ Response:
 
 - General:
     - Insert and persist a new equipment associated with a existing vessel into the database. 
-- Sample: `curl https://127.0.0.1:5000/equipments -H POST -H "Content-Type: application/json" -d "{\"code\": \"MV111\"}"`
+- Sample: `curl https://127.0.0.1:5000/equipments -H POST -H "Content-Type: application/json" -d "{\"name\": \"compressor\", \"code\": \"MV111\", \"location\": \"Brazil\", \"vessel_code\": \"MV102\"}"`
 
 Request:
 ```json
