@@ -157,7 +157,7 @@ Response:
 
 - General:
     - Update activation_status of a list containing one or more equipments, setting it to False, what means that these equipments are deactivate.
-- Sample: `https://127.0.0.1:5000/equipments`
+- Sample: `curl https://127.0.0.1:5000/equipments -H PATCH -H "Content-Type: application/json" -d "{\"equipments\": [{\"code\": \"5310D9B7\"}, {\"code\": \"5310D9B8\"}, {\"code\": \"No Exist In Database\"}]}"`
 
 request:
 ```json
