@@ -104,7 +104,7 @@ The API will return three errors types when requests fail:
 
 - General:
     - Insert and persist a new vessel into the database.
-- Sample: `curl https://127.0.0.1:5000/vessels -H POST -H "Content-Type: application/json" -d "{\"code\": \"MV102\"}"`
+- Sample: `curl https://127.0.0.1:5000/vessels -X POST -H "Content-Type: application/json" -d "{\"code\": \"MV102\"}"`
 
 Using windows put \ before double quotes is necessary to avoid errors.
 
@@ -128,7 +128,7 @@ Response:
 
 - General:
     - Insert and persist a new equipment associated with a existing vessel into the database. 
-- Sample: `curl https://127.0.0.1:5000/equipments -H POST -H "Content-Type: application/json" -d "{\"name\": \"compressor\", \"code\": \"MV111\", \"location\": \"Brazil\", \"vessel_code\": \"MV102\"}"`
+- Sample: `curl https://127.0.0.1:5000/equipments -X POST -H "Content-Type: application/json" -d "{\"name\": \"compressor\", \"code\": \"MV111\", \"location\": \"Brazil\", \"vessel_code\": \"MV102\"}"`
 
 Request:
 ```json
@@ -157,7 +157,7 @@ Response:
 
 - General:
     - Update activation_status of a list containing one or more equipments, setting it to False, what means that these equipments are deactivate.
-- Sample: `curl https://127.0.0.1:5000/equipments -H PATCH -H "Content-Type: application/json" -d "{\"equipments\": [{\"code\": \"5310D9B7\"}, {\"code\": \"5310D9B8\"}, {\"code\": \"No Exist In Database\"}]}"`
+- Sample: `curl https://127.0.0.1:5000/equipments -X PATCH -H "Content-Type: application/json" -d "{\"equipments\": [{\"code\": \"5310D9B7\"}, {\"code\": \"5310D9B8\"}, {\"code\": \"No Exist In Database\"}]}"`
 
 request:
 ```json
