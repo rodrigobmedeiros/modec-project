@@ -38,6 +38,26 @@ createdb -U postgres modec
 
 In this case -U defines the user used to create the databases. Although the default postgres user has been used, any other user can be used as long as he has the creation permissions in the environment used.
 
+__config.json and config_test.json__
+
+To run the tests and the application, it's necessary to adjust the `config.json` and the `config_test.json`. These files are used to get all information needed to connect with databases.
+
+```json
+{
+    "database_info": {
+        "database": "postgresql",
+        "user": "postgres",
+        "password": "draGao01",
+        "host": "localhost",
+        "port": "5432",
+        "database_name": "modec"
+    }
+}
+
+```
+
+Just verify all information to connect correctly.
+
 ### Python 3 
 
 It's necessary to have python3 and pip installed. The version used was `3.7.2 32 bits` and it is highly recommended to create a virtual environment to create an isolated development environment. All required packages are included in the requirements.txt file. To run the application follow instructions bellow:
