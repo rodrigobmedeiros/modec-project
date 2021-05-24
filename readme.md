@@ -77,6 +77,8 @@ With "OK" meaning that all tests were passed with success.
 ## API Rerefence
 ___
 
+curl was used to call API endpoints. To install and configure curl depending on your operational system, visit this [website](https://curl.se/).
+
 ### Getting Started
 
 - Base URL: Running locally the base url is `https://127.0.0.1:5000/`
